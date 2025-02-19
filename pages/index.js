@@ -1,10 +1,5 @@
 function Home() {
-  return <h1> Giancarlo Ceregatti </h1>;
-  <h2>Portifólio Giancarlo Ceregatti</h2>;
-}
-
-function teste() {
-  console.log("teste");
+  return <h1>Santos FC</h1>;
 }
 
 export default Home;
