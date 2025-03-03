@@ -1,3 +1,3 @@
 # clone-tabnews
 
-Projeto para treinamento
+Projeto para treinamento, aprendendo diversas tecnologias
