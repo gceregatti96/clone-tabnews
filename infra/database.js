@@ -2,7 +2,7 @@ import { Client } from "pg";
 
 async function query(queryObject) {
   let client;
-  try{
+  try {
     client = await getNewClient();
     const result = await client.query(queryObject);
     return result;
@@ -23,17 +23,17 @@ async function getNewClient() {
     password: process.env.POSTGRES_PASSWORD,
     ssl: getSSLValues(),
   });
-  
+
   await client.connect();
   return client;
+}
 
-};
-
-
-export default {
+const database = {
   query,
   getNewClient,
 };
+
+export default database;
 
 function getSSLValues() {
   if (process.env.POSTGRES_CA) {
